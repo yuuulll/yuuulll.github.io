@@ -1,0 +1,113 @@
+.Wrap {
+    min-width:1900px;
+    overflow-x:hidden;
+}
+
+.topBanner {
+    display: block;
+    background:rgb(4, 53, 40);
+    margin-bottom: auto;
+    padding:7px 100px;
+}
+
+.logo {
+    display:flex;
+    top: 50px;
+    padding: 20px;
+    text-align: right;
+
+}
+
+.mainVisual {
+    position: relative;
+}
+
+.mainVisual figure {
+    height: 45vh;
+    margin-top: 10px;
+    background-repeat: repeat;
+    background-position-x:left;
+    background-position-y:left;
+    background-size:cover;
+}
+
+.mainVisual .itm01 {
+    background:url(../img/main_img01.jpg);
+}
+.mainVisual .itm02 {
+    background:url(../img/main_img01.jpg);
+}
+.mainVisual .itm03 {
+    background:url(../img/main_img01.jpg);
+}
+
+.mainVisual .slick-dots {
+    position:absolute;
+    left:50%;
+    bottom: 30px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    transform: translateX(-50%);
+}
+
+.mainVisual .slick-dots li {
+    width:8px;
+    height:8px;
+    border-radius: 15px;
+    cursor:pointer;
+
+    background:#fff;
+}
+
+.mainVisual .slick-arrow {
+    position:absolute;
+    z-index:999;
+
+    width:10px;
+    height:20px;
+    border:none;
+    border-top:1px solid #fff;
+    border-left:1px solid #fff;
+    cursor: pointer;
+    outline:none;
+    background:transparent;
+    text-indent: -999999px;
+}
+
+.mainVisual .slick-prev {
+    top:50%;
+    left:100px;
+    transform:translateY(-50%) rotate(-45deg) ;
+}
+
+.mainVisual .slick-next {
+    top:50%;
+    right:100px;
+    transform:translateY(-50%) rotate(135deg);
+}
+
+.mainVisual .slick-dots li.slick-active {
+    background:rgb(255, 255, 255);
+}
+
+.mainVisual .slick-dots button {
+    display:none;
+}
+
+.mainVisual .slideArrows i {
+    position: absolute;
+    top:50%;
+    font-size:100px;
+    color:rgba(255,255,255,0.5);
+    transform: translateY(-50%);
+    cursor:pointer;
+}
+
+.mainVisual .slideArrows i:first-child {
+    left:100px;
+}
+
+.mainVisual .slideArrows i:last-child {
+    right:100px;
+}
