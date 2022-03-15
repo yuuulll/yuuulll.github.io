@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NONFICTION</title>
+    <style>
+        /* reset */
+        * {margin:0;padding:0;box-sizing:border-box;font-size:inherit;font-weight:normal;color:inherit;}
+        ul,ol {list-style:none;}
+        a {text-decoration:none;}
+        img {vertical-align:middle;}
+        body {line-height:1;}
+
+        /* basic float layout */
+
+        h1 {
+            font-weight: bold;
+            font-size:30px;
+            text-align:center;
+            margin-bottom:1000px;}
+        
+        .sc01 {
+            padding:100px 0;
+            background-color:#f2f2f2;
+            text-align:center;
+        }
+
+        .sc01 .container::after {
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        .sc01 figure img {
+            position: absolute;
+            width:70%;
+            margin-bottom:100px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .sc02 {
+            padding:100px 0;
+            background-color:#f2f2f2;
+            text-align:center;
+        }
+
+        .sc02 h2 {
+            font-size:30px;
+            font-weight:bold;
+            margin-bottom:15px;
+        }
+        .sc02 >p {
+            font-size:15px;
+            margin-bottom:30px;
+        }
+        .sc02 .container {
+            margin:0 auto;
+            width:1200px;
+        }
+        .sc02 .container::after {
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        .sc02 figure {
+            float:left;
+            width:33.333333%;
+            padding:0 10px;
+        }
+
+        .sc02 figure img {
+            width:100%;
+            margin-bottom:20px;
+        }
+
+        .sc02 figure p {
+            font-size:large;
+            color:rgb(0, 0, 0);
+            margin-bottom:10px;
+        }
+        .sc02 figure a {
+            font-weight:normal;
+            display:block;
+            margin:0 auto;
+            width:180px;
+            height:30px;
+            background:#25442F;
+            color:#f2f2f2;
+            line-height:30px;
+            border-radius: 100px;
+        }
+        .sc03 {
+            padding:100px 0;
+            background-color:#DEDEDE;
+            text-align:center;
+        }
+
+        .sc03 h2 {
+            font-size:30px;
+            font-weight:bold;
+            margin-bottom:15px;
+        }
+        .sc03 >p {
+            font-size:15px;
+            margin-bottom:30px;
+        }
+        .sc03 .container {
+            margin:0 auto;
+            width:1200px;
+        }
+        .sc03 .container::after {
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        .sc03 figure {
+            float:left;
+            width:25%;
+            padding:0 10px;
+        }
+
+        .sc03 figure img {
+            width:100%;
+            margin-bottom:20px;
+        }
+
+        .sc03 figure p {
+            font-size:large;
+            color:rgb(0, 0, 0);
+            margin-bottom:10px;
+        }
+        .sc03 figure a {
+            font-weight:normal;
+            display:block;
+            margin:0 auto;
+            width:180px;
+            height:30px;
+            background:#25442F;
+            color:#f2f2f2;
+            line-height:30px;
+            border-radius: 100px;
+        }
+        .sc04 {
+            padding:100px 0;
+            background-color:#f2f2f2;
+            text-align:center;
+        }
+
+        .sc04 h2 {
+            font-size:30px;
+            font-weight:bold;
+            margin-bottom:15px;
+        }
+        .sc04 >p {
+            font-size:15px;
+            margin-bottom:30px;
+        }
+        .sc04 .container {
+            margin:0 auto;
+            width:1200px;
+        }
+        .sc04 .container::after {
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        .sc04 figure {
+            float:left;
+            width:20%;
+            padding:0 10px;
+        }
+
+        .sc04 figure img {
+            width:100%;
+            margin-bottom:20px;
+        }
+
+        .sc04 figure p {
+            font-size:large;
+            color:rgb(0, 0, 0);
+            margin-bottom:10px;
+        }
+        .sc04 figure a {
+            font-weight:normal;
+            display:block;
+            margin:0 auto;
+            width:180px;
+            height:30px;
+            background:#25442F;
+            color:#f2f2f2;
+            line-height:30px;
+            border-radius: 100px;
+        }
+        .sc05 {
+            padding:100px 0;
+            background-color:#DEDEDE;
+            text-align:center;
+        }
+
+        .sc05 h2 {
+            font-size:30px;
+            font-weight:bold;
+            margin-bottom:15px;
+        }
+        .sc05 >p {
+            font-size:15px;
+            margin-bottom:30px;
+        }
+        .sc05 .container {
+            margin:0 auto;
+            width:1200px;
+        }
+        .sc05 .container::after {
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        .sc05 figure {
+            float:left;
+            width:50%;
+            padding:0 10px;
+        }
+
+        .sc05 figure img {
+            width:100%;
+            margin-bottom:20px;
+        }
+
+        .sc05 figure p {
+            font-size:large;
+            color:rgb(0, 0, 0);
+            margin-bottom:10px;
+        }
+        .sc05 figure a {
+            font-weight:normal;
+            display:block;
+            margin:0 auto;
+            width:180px;
+            height:30px;
+            background:#25442F;
+            color:#f2f2f2;
+            line-height:30px;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>NONFICTION</h1>
+    <section class="sc01">
+        <div class="container">
+            <figure>
+                <img src="../img/main_img01.jpg" alt="">
+            </figure>
+        </div>
+    </section>
+    <section class="sc02">
+        <h2>SHOP ALL</h2>
+        <p>최상의 원료와 섬세한 조향을 바탕으로 신비롭고 독특한 무드를 빚어내는 제품군입니다.</p>
+        <div class="container">
+            <figure>
+                <img src="../img/img01.jpg" alt="">
+                <p>젠틀나잇</p>
+                <a href="#!">BUY</a>
+            </figure>
+            <figure>
+                <img src="../img/img02.jpg" alt="">
+                <p>젠틀나잇</p>
+                <a href="#!">BUY</a>
+            </figure>
+            <figure>
+                <img src="../img/img01.jpg" alt="">
+                <p>젠틀나잇</p>
+                <a href="#!">BUY</a>
+            </figure>    
+    </section>
+
+    <section class="sc03">
+        <h2>BEST SELLER</h2>
+        <p>최상의 원료와 섬세한 조향을 바탕으로 신비롭고 독특한 무드를 빚어내는 제품군입니다.</p>
+        <div class="container">
+            <figure>
+                <img src="../img/img04.jpg" alt="">
+                <p>젠틀나잇</p>
+                <a href="#!">BUY</a>
+            </figure>
+            <figure>
+                <img src="../img/img05.jpg" alt="">
+                <p>젠틀나잇</p>
+                <a href="#!">BUY</a>
+            </figure>
+            <figure>
+                <img src="../img/img06.jpg" alt="">
+                <p>젠틀나잇</p>
+                <a href="#!">BUY</a>
+            </figure>
+            <figure>
+                <img src="../img/img04.jpg" alt="">
+                <p>젠틀나잇</p>
+                <a href="#!">BUY</a>
+            </figure>
+    </section>
+
+    <section class="sc04">
+        <h2>BODY CARE</h2>
+        <p>최상의 원료와 섬세한 조향을 바탕으로 신비롭고 독특한 무드를 빚어내는 제품군입니다.</p>
+        <div class="container">
+            <figure>
+                <img src="../img/img01.jpg" alt="">
+                <p>젠틀나잇</p>
+                <a href="#!">BUY</a>
+            </figure>
+            <figure>
+                <img src="../img/img02.jpg" alt="">
+                <p>젠틀나잇</p>
+                <a href="#!">BUY</a>
+            </figure>
+            <figure>
+                <img src="../img/img01.jpg" alt="">
+                <p>젠틀나잇</p>
+                <a href="#!">BUY</a>
+            </figure>
+            <figure>
+                <img src="../img/img01.jpg" alt="">
+                <p>젠틀나잇</p>
+                <a href="#!">BUY</a>
+            </figure>
+            <figure>
+                <img src="../img/img01.jpg" alt="">
+                <p>젠틀나잇</p>
+                <a href="#!">BUY</a>
+            </figure>
+    </section>
+
+    <section class="sc05">
+        <h2>PERFUME</h2>
+        <p>최상의 원료와 섬세한 조향을 바탕으로 신비롭고 독특한 무드를 빚어내는 제품군입니다.</p>
+        <div class="container">
+            <figure>
+                <img src="../img/img08.jpg" alt="">
+                <p>젠틀나잇</p>
+                <a href="#!">BUY</a>
+            </figure>
+            <figure>
+                <img src="../img/img09.jpg" alt="">
+                <p>젠틀나잇</p>
+                <a href="#!">BUY</a>
+            </figure>
+    </div>
+</body>
+</html>
